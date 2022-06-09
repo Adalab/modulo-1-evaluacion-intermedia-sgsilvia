@@ -63,6 +63,7 @@ h1 {
   .header {
     flex-direction: row;
   }
-
-  .
+  .nav {
+    justify-content: end;
+  }
 }
