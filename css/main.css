@@ -1,0 +1,82 @@
+* {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Rubik", sans-serif;
+  --color-texto-menu: #4a4a4a;
+  --color-background: #3cdbc0;
+  --color-white: #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: var(--color-white);
+  padding-bottom: 13px;
+  width: 100vw;
+}
+
+.header .logo {
+  width: 155px;
+}
+
+.header .link-logo {
+  padding-top: 10px;
+}
+
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  list-style: none;
+}
+
+.menu-link {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--color-texto-menu);
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-white);
+  background-color: var(--color-background);
+}
+
+.h1 {
+  width: 11ch;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    padding-left: 30px;
+  }
+
+  .header .menu {
+    padding-right: 20px;
+  }
+  .h1 {
+    font-size: 40px;
+  }
+}
